@@ -1,0 +1,61 @@
+.footer {
+   width: 100%;
+   padding: 63px 0 45px;
+   background-color: $white;
+   position: relative;
+   &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $borderInput;
+      position: absolute;
+      top: 142px;
+      left: 0;
+      right: 0;
+   }
+   &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $borderInput;
+      position: absolute;
+      bottom: 98px;
+      left: 0;
+      right: 0;
+   }
+   &-logo {
+      margin-bottom: 45px;
+   }
+
+   &-social {
+      padding: 25px 15px;    
+      .fab {
+         font-size: 13px;
+         color: $text;
+         transition: color 0.3s ease;
+         &:hover {
+            color: $textDark;
+         }
+      }
+   }
+   &-copyright {
+      display: block;
+      padding-top: 24px;
+      text-align: center;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: $text;
+      letter-spacing: 0.6px;
+      &__link {
+         color: $textDark;
+         transition: border-bottom 0.8s ease,
+                     color 0.8s ease;
+         &:hover {
+            border-bottom: 1px solid $textDark;
+            color: $dark;
+         }
+      }
+   }
+}

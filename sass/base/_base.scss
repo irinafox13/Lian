@@ -1,0 +1,73 @@
+body, html {
+   height: 100%;
+}
+
+body {
+   position: relative;
+   font-family: $fontFamily;
+   font-size: 14px;
+   background-color: $lightBg;
+   overflow-x: hidden;
+}
+
+img {
+   max-width: 100%;
+   max-height: auto;
+}
+
+.container {
+   width: 100%;      
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+input:focus, 
+button:focus {
+   outline: none;
+   box-shadow: none;
+}
+
+select:focus {
+   outline-color: transparent !important;
+}
+
+*::-webkit-input-placeholder {
+	color: $textInput;
+	opacity: 1;
+}
+
+*:-moz-placeholder {
+	color: $textInput;
+	opacity: 1;
+}
+
+*::-moz-placeholder {
+	color: $textInput;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: $textInput;
+	opacity: 1;
+}
+.heading {
+   width: 100%;
+   margin-top: 90px;
+   padding: 115px 0;
+   font-family: $fontFamilyLight;   
+}
+.title {
+   @include h1;
+}
+
+.subtitle {
+   @include h2;
+}
+
+.title-h3 {
+   @include h3;
+}
+
+.title-h4 {
+   @include h4;
+}

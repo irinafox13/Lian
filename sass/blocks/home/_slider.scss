@@ -1,0 +1,105 @@
+.slider {
+   margin-top: 90px;
+}
+.slider .title {
+   padding: 5px;
+   margin-bottom: 35px;
+}
+.carousel {
+   position: relative;
+}
+
+.carousel-indicators {
+   @include flex-center;
+   flex-direction: row;
+   margin-bottom: 15px;
+   li {
+      display: block;
+      background-color: $white;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      opacity: 1;
+      &:not(:first-child) {
+         margin-left: 10px;
+      }
+   }
+   
+}
+.carousel .carousel-indicators .active {
+   display: block;
+   background-color: $white;
+   width: 7px;
+   height: 7px;
+   border-radius: 50%;
+   border: 3px solid $dark;
+}
+.carousel-inner {
+   max-height: 650px;
+   .carousel-item {  
+      max-height: 650px;
+      width: 100%;
+      position: relative;    
+      img {
+      object-fit: cover;
+      object-position: center top;
+      }      
+   }   
+   .carousel-caption {
+      min-width: 220px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include flex-center;
+      flex-direction: column;
+   }
+}
+
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+   display: block;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background-color: transparent;
+   border: 1px solid $white;
+   position: relative;
+   background-image: none;
+   transition: background-color 0.3s linear;
+   &::before {
+      content: '';
+      display: block;
+      height: 17px;
+      width: 1px;
+      background-color: $white;
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: rotate(45deg) translateX(-50%);
+   }
+   &::after {
+      content: '';
+      display: block;
+      height: 17px;
+      width: 1px;
+      background-color: $white;
+      position: absolute;
+      top: 17px;
+      left: 50%;
+      transform: rotate(-45deg) translateX(-50%);
+   }
+   &:hover {
+      background-color: $dark;
+      border-color: $dark;
+   }
+}
+.carousel .carousel-control-next-icon {
+   &::before {      
+      transform: translateX(-50%) rotate(-45deg);
+   }
+   &::after {      
+      transform: translateX(-50%) rotate(45deg);
+   }
+}

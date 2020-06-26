@@ -1,0 +1,85 @@
+.form {
+   width: 100%;
+   background-color: $lightBg;
+   padding: 80px 0;
+
+   &-info {
+      position: relative;
+      display: block;
+      font-family: $fontFamilyLight;
+      margin-bottom: 63px;
+
+      &::after {
+         content: '';
+         display: block;
+         width: 60px;
+         height: 1px;
+         background-color: $dark;
+         position: absolute;
+         bottom: -20px;
+         left: 0;
+      }
+   }
+   &-subtitle {
+      font-size: 16px;
+      color: $textGrey;
+      letter-spacing: 0.4px;
+   }
+   &-text {
+      font-size: 15px;
+      color: $text;
+      letter-spacing: 0.6px;
+      &--margin {
+         margin-bottom: 35px;
+      }      
+      span {
+         font-weight: 700;
+         color: $textDark;
+      }
+      &-link {
+         color: $textGrey;
+         font-weight: 700;
+      }
+   }
+   &-group {
+      margin-bottom: 0;
+   }
+   &-control {
+      height: 40px;
+      border-radius: 2px;
+      border: 1px solid $borderInput;
+      color: $textInput;
+      font-style: italic;
+      background-color: transparent;
+      margin-bottom: 30px;
+      outline: 0;
+      &--message {
+         height: 150px;
+      }
+      &:focus, &:active {
+         border-top-left-radius: 0;
+         border-bottom-left-radius: 0;         
+         outline: none;
+         box-shadow: none;
+         border-color: $borderInput;
+         border-left: 3px solid $text;
+         background-color: transparent;
+         padding-left: 8.5px;
+      }
+   }
+
+   &-btn {
+      display: block;
+      width: 220px;
+      height: 40px;
+      background-color: $dark;
+      color: $white;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      &:hover {
+         background-color: lighten($dark, 30%);
+      }
+   }
+}

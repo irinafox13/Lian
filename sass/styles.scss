@@ -1,0 +1,31 @@
+@import 'base/null';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixin';
+@import 'base/base';
+
+@import 'blocks/header';
+@import 'blocks/footer';
+
+/*Home*/ 
+@import 'blocks/home/slider';
+/*About*/ 
+@import 'blocks/about/progress';
+/*Portfolio*/ 
+@import 'blocks/portfolio/portfolio-heading';
+@import 'blocks/portfolio/card';
+/* Details*/
+@import 'blocks/details/portfolio-slider';
+/*Blog*/ 
+@import 'blocks/blog/blog-heading';
+@import 'blocks/blog/blog';
+/*Post*/ 
+@import 'blocks/post/post-heading';
+@import 'blocks/post/post';
+/*Contacts*/ 
+@import 'blocks/contacts/heading';
+@import 'blocks/contacts/form';
+@import 'blocks/contacts/map';
+@import 'blocks/contacts/value';
+
+@import 'media/media';
