@@ -1591,7 +1591,7 @@ header {
   background: url(../img/blog/video.jpg) right center/cover no-repeat;
 }
 
-.load-more {
+.blog-more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1611,7 +1611,7 @@ header {
   transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
-.load-more:hover {
+.blog-more:hover {
   -webkit-box-shadow: inset 10px 0 15px 15px black;
           box-shadow: inset 10px 0 15px 15px black;
 }
