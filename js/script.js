@@ -3,13 +3,13 @@ $(function(){
       const btn = $(this);
       const loader = btn.find('.sr-only');
       $.ajax({
-         url: '../data.html',
+         url: '/data.html',
          type: 'GET',
          beforeSend: function(){
             btn.attr('disabled', true);
             loader.addClass('d-inline-block');
          },
-         success: function(response){
+         success: function(responce){
             setTimeout(function(){
                loader.removeClass('d-inline-block');
                btn.attr('disabled', false);
