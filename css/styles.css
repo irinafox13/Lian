@@ -1583,7 +1583,7 @@ header {
 
 .video {
   height: 245px;
-  background: url(../../../img/blog/video.jpg) right center/cover no-repeat;
+  background: url(../img/blog/video.jpg) right center/cover no-repeat;
 }
 
 .blog-more {
