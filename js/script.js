@@ -1,9 +1,9 @@
 $(function(){
-	$('.load-more').on('click', function(){
+	$('.blog-more').on('click', function(){
       const btn = $(this);
-      const loader = btn.find('span');
+      const loader = btn.find('.sr-only');
       $.ajax({
-         url: '/data.html',
+         url: '../data.html',
          type: 'GET',
          beforeSend: function(){
             btn.attr('disabled', true);

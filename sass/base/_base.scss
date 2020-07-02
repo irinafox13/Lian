@@ -71,3 +71,6 @@ select:focus {
 .title-h4 {
    @include h4;
 }
+.blog-more .load-more .sr-only {
+   display: none;
+}
