@@ -1,5 +1,5 @@
 .about-box {
-   padding: 70px 0 75px;
+   padding: 0 0 75px;
    &__image {
       padding-bottom: 50%;
       overflow: hidden;
@@ -16,9 +16,13 @@
       }
    }
 }
+.about-story__title, .about-skills__title {
+   display: block;
+   margin: 20px 0 15px;
+}
 .about-info {
    text-align: center;
-   padding: 90px 0 70px;   
+   padding: 40px 0 30px;   
 }
 .about-title {
    margin-bottom: 45px;
@@ -49,14 +53,14 @@
    }
    &::after {
       content: '';
+      position: absolute;
+      top: 18px;
       display: block;
       width: 5px;
       height: 5px;
       border: 5px solid transparent; 
       border-left: 5px solid $dark; 
-      border-top: 5px solid $dark;
-      position: absolute;
-      top: 18px;
+      border-top: 5px solid $dark;      
    }
    &-1::after {
       right: 9%;
@@ -138,7 +142,7 @@
    }
 }
 .about-card {
-
+   
    .about-image {
       background-color: #eeeeee;
       height: 440px;      
@@ -159,7 +163,10 @@
       }
    }
    .about-card-body {
-      padding: 30px 30px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 15px 30px;
       background-color: $white;
    }
    .about-card-title {

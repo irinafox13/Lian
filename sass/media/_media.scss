@@ -50,16 +50,51 @@
    .post-heading {
       background-position: center top;
    }
+   .navigation-wrapper .slick-arrow {
+      padding: 25px 35px;              
+   }
+   .slick-prev::before {
+      margin-left: 10px;
+   }
+   .slick-next::after {
+      margin-right: 10px;
+   }
+   .contact-heading {
+      background: url(../../../img/contacts/laptop.png) right center / cover no-repeat;
+   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 576px) {
+   .about-info {
+      padding: 90px 0 70px;   
+   }
    .card-columns .blog-aside .form-inline {
       padding: 0;
    }
    .blog-aside .blog-form__btn {
       right: 10px;
    }
+}
+@media (min-width: 576px) and (max-width : 768px) {
+   .progress-wrapper {
+      &-1::after {
+         right: 7%;
+      }
+      &-2::after {
+         right: 2.4%;
+      }
+      &-3::after {
+         right: 47.4%;
+      }
+      &-4::after {
+         right: 12.4%;
+      }
+   }
+   .recent-insta img {
+      width: 100%;
+      object-fit: cover;
+   }   
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
@@ -69,12 +104,31 @@
    .subtitle {
       font-size: 18px;
    }
+   .slider .title {
+      background-color: $dark;
+   }
    .portfolio__filter-item {
       font-size: 14px;
       padding: 20px 30px;
    }
+   .about-box {
+      padding-top: 70px;
+   }  
+   .about-card .about-card-body {
+      padding: 30px 30px 50px;
+   } 
    .about-box__image {
       margin-bottom: 0;
+   }
+   .recent-insta img {
+      width: 100px;
+   }   
+   .card-columns .card-body {
+      padding: 35px 45px;
+      
+      & .card-body-label {
+         padding: 23px 45px;
+      }
    }
 }
 

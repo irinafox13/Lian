@@ -34,11 +34,11 @@
 }
 .card-columns .card-body {
    background-color: $white;
-   padding: 35px 45px;
+   padding: 25px 15px;
    
-   & .card-body-label {
-      padding: 23px 45px;
-   }
+   // & .card-body-label {
+   //    padding: 13px 25px;
+   // }
 }
 .card-columns .card-margin {
    margin-bottom: 35px;
@@ -73,6 +73,8 @@
 }
 .card-columns .card-bottom {
    @include flex-sb;
+   flex-flow: wrap;
+   justify-content: flex-start;
    margin-bottom: 0;
 }
 .text-muted {
@@ -214,6 +216,9 @@
       color: $white;
       background-color: $dark;
    }
+}
+.card-resent__insta {
+   text-align: center;
 }
 .recent-insta img {
    width: 100px;
