@@ -13,7 +13,7 @@ $(function(){
             setTimeout(function(){
                loader.removeClass('d-inline-block');
                btn.attr('disabled', false);
-               console.log(responce);
+               $('.after-posts').before(responce);
             }, 1000);
          },
          error: function(){

@@ -203,6 +203,10 @@ select:focus {
   padding: 0 15px;
 }
 
+.blog-more .load-more .sr-only {
+  display: none;
+}
+
 header {
   width: 100%;
   min-height: 90px;
@@ -1521,6 +1525,7 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 5px;
+  margin-left: 5px;
   -webkit-transition: -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
   transition: -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -1586,7 +1591,7 @@ header {
   background: url(../img/blog/video.jpg) right center/cover no-repeat;
 }
 
-.blog-more {
+.load-more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1606,7 +1611,7 @@ header {
   transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 
-.blog-more:hover {
+.load-more:hover {
   -webkit-box-shadow: inset 10px 0 15px 15px black;
           box-shadow: inset 10px 0 15px 15px black;
 }
@@ -1994,6 +1999,9 @@ header {
   }
   .card-columns .card-body .card-body-label {
     padding: 23px 45px;
+  }
+  .recent .card-body {
+    padding: 30px 20px 20px;
   }
 }
 

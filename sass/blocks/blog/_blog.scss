@@ -225,6 +225,7 @@
    height: 80px;
    object-fit: cover;
    margin-bottom: 5px;
+   margin-left: 5px;
    transition: transform 0.2s ease,
                box-shadow 0.2s ease;
    &:hover {
@@ -267,7 +268,7 @@
    background: url(../img/blog/video.jpg) right center / cover no-repeat;
 }
 
-.blog-more {
+.load-more {
    @include flex-center;
    width: 125px;
    height: 30px;
