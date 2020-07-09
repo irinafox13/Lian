@@ -1633,7 +1633,7 @@ header {
 
 /*Post*/
 .post-heading {
-  background: #f0f0f2 url(../../img/single_post/girl.jpg) 70% top/cover no-repeat;
+  background: #f0f0f2 url(../img/single_post/girl.jpg) 70% top/cover no-repeat;
 }
 
 .post {
@@ -1895,6 +1895,7 @@ header {
   letter-spacing: 0.2px;
 }
 
+/* Media */
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1930,7 +1931,7 @@ header {
     margin-right: 10px;
   }
   .contact-heading {
-    background: url(../../../img/contacts/laptop.png) right center/cover no-repeat;
+    background: url(../img/contacts/laptop.png) right center/contain no-repeat;
   }
 }
 
